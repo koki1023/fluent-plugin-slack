@@ -228,6 +228,10 @@ DESC
       end
     end
 
+    def multi_workers_ready?
+      true
+    end
+
     def format(tag, time, record)
       [tag, time, record].to_msgpack
     end
